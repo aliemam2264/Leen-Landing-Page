@@ -1,0 +1,10 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="700" rx="42" fill="#FFF0E8"/>
+  <circle cx="760" cy="120" r="230" fill="#F36A21" fill-opacity="0.16"/>
+  <circle cx="90" cy="600" r="260" fill="#7A0024" fill-opacity="0.1"/>
+  <rect x="96" y="90" width="708" height="460" rx="36" fill="white" stroke="#F36A21" stroke-opacity="0.22"/>
+  <path d="M454 156C372 156 306 223 306 305V428C306 499 364 557 435 557H473C544 557 602 499 602 428V305C602 223 536 156 454 156Z" fill="#F36A21" fill-opacity="0.12"/>
+  <path d="M367 407C424 457 496 457 553 407" stroke="#7A0024" stroke-width="16" stroke-linecap="round"/>
+  <path d="M344 265C415 203 511 208 567 270" stroke="#F36A21" stroke-width="16" stroke-linecap="round"/>
+  <text x="450" y="626" text-anchor="middle" font-family="Tahoma, Arial" font-size="42" font-weight="700" fill="#7A0024">صورة بعد</text>
+</svg>
