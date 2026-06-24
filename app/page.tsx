@@ -13,7 +13,7 @@ import { beforeAfterCases, devices, gallery, heroStats, siteConfig, testimonials
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
 export default function Home() {
-  const whatsappMessage = encodeURIComponent("مرحبًا، أريد حجز موعد في عيادة لين");
+  const whatsappMessage = encodeURIComponent("مرحبًا، أريد حجز موعد في مجمع لين الشرق");
 
   return (
       <>
@@ -52,8 +52,12 @@ export default function Home() {
               <div className="relative z-10">
                 <div className="absolute -right-8 top-8 h-40 w-40 rounded-full bg-orange/20 blur-3xl" />
                 <div className="absolute -left-8 bottom-8 h-40 w-40 rounded-full bg-wine/20 blur-3xl" />
-                <div className="relative mx-auto max-w-[520px] rounded-[2.5rem] border border-white/80 bg-white/55 p-4 shadow-soft backdrop-blur-xl">
-                  <img src="/images/hero-placeholder.svg" alt="ضع صورة العيادة هنا" className="aspect-[.86] w-full rounded-[2rem] object-cover" />
+                <div className="relative max-w-[520px] justify-self-center lg:justify-self-end overflow-hidden rounded-[2.5rem] border border-white/80 bg-white/55 shadow-soft backdrop-blur-xl">
+                  <img
+                    src="/images/hero-placeholder.svg"
+                    alt="ضع صورة العيادة هنا"
+                    className="block aspect-[.86] w-full rounded-[2.5rem] object-cover"
+                  />
                   <div className="absolute bottom-8 right-8 left-8 rounded-[1.5rem] border border-white/80 bg-white/88 p-4 shadow-soft backdrop-blur">
                     <div className="flex items-center gap-3">
                       <div className="grid h-12 w-12 place-items-center rounded-full bg-peach text-orange">

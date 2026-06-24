@@ -18,7 +18,7 @@ const config: Config = {
         xl: "2.5rem",
       },
       screens: {
-        "2xl": "1480px",
+        "2xl": "1600px",
       },
     },
     extend: {

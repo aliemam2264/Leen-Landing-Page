@@ -17,7 +17,7 @@ const navItems = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const whatsappMessage = encodeURIComponent("مرحبًا، أريد حجز موعد في عيادة لين");
+  const whatsappMessage = encodeURIComponent("مرحبًا، أريد حجز موعد في مجمع لين الشرق");
   const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${whatsappMessage}`;
 
   useEffect(() => {

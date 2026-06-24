@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 
 export function FloatingWhatsapp() {
-  const message = encodeURIComponent("مرحبًا، أريد حجز موعد في عيادة لين");
+  const message = encodeURIComponent("مرحبًا، أريد حجز موعد في مجمع لين الشرق");
   return (
     <a
       href={`https://wa.me/${siteConfig.whatsappNumber}?text=${message}`}

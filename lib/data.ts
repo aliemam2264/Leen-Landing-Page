@@ -18,7 +18,7 @@ export const siteConfig = {
   arabicName: "مجمع لين الشرق الطبي",
   tagline: "أسنان · جلدية · تجميل · ليزر",
   phoneDisplay: "+20 100 000 0000",
-  whatsappNumber: "201095927101",
+  whatsappNumber: "201119401445",
   address: "اكتبي عنوان العيادة هنا - مثال: القاهرة، مصر",
   mapEmbedUrl: "https://www.google.com/maps",
   workingHours: "يوميًا من 12 ظهرًا حتى 10 مساءً",

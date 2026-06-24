@@ -12,7 +12,6 @@ type FormState = {
   name: string;
   phone: string;
   service: string;
-  preferredDate: string;
   notes: string;
 };
 
@@ -20,7 +19,6 @@ const initialState: FormState = {
   name: "",
   phone: "",
   service: "",
-  preferredDate: "",
   notes: ""
 };
 
@@ -35,25 +33,36 @@ export function BookingForm() {
   };
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setError("");
+  event.preventDefault();
+  setError("");
 
-    if (!form.name.trim() || !form.phone.trim() || !form.service.trim()) {
-      setError("من فضلك اكتبي الاسم، رقم الهاتف، والخدمة المطلوبة.");
-      return;
-    }
+  if (!form.name.trim() || !form.phone.trim() || !form.service.trim()) {
+    setError("من فضلك اكتبي الاسم، رقم الهاتف، والخدمة المطلوبة.");
+    return;
+  }
 
-    const message = [
-      "مرحبًا، أريد حجز موعد في عيادة لين",
-      `الاسم: ${form.name}`,
-      `رقم الهاتف: ${form.phone}`,
-      `الخدمة المطلوبة: ${form.service}`,
-      `الموعد المناسب: ${form.preferredDate || "غير محدد"}`,
-      `ملاحظات: ${form.notes || "لا يوجد"}`
-    ].join("\n");
+  const message = [
+    "مرحبًا، أريد حجز موعد في مجمع لين الشرق",
+    "",
+    `الاسم : ${form.name.trim()}`,
+    `الهاتف : ${form.phone.trim()}`,
+    `الخدمة المطلوبة : ${form.service.trim()}`,
+    `ملاحظات : ${form.notes.trim() || "لا يوجد"}`,
+  ].join("\n");
 
-    window.open(`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
-  };
+  window.open(
+    `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`,
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+  setForm({
+    name: "",
+    phone: "",
+    service: "",
+    notes: "",
+  });
+};
 
   return (
     <form onSubmit={submit} className="rounded-[2rem] border border-white/70 bg-white/90 p-5 shadow-soft backdrop-blur md:p-8">
@@ -74,7 +83,6 @@ export function BookingForm() {
             </option>
           ))}
         </Select>
-        <Input value={form.preferredDate} onChange={(event) => update("preferredDate", event.target.value)} placeholder="الموعد المناسب مثال: الخميس مساءً" className="md:col-span-2" />
         <Textarea value={form.notes} onChange={(event) => update("notes", event.target.value)} placeholder="ملاحظات إضافية اختيارية" className="md:col-span-2" />
       </div>
 
