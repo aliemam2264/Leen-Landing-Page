@@ -1,9 +1,9 @@
 # Leen Clinic Landing Page
 
-Landing page جاهزة لعيادة تجميل / جلدية / ليزر مبنية بـ:
+Landing page ـ:
 
 - Next.js
 - Tailwind CSS
 - shadcn-style UI components
-- WhatsApp booking بدون Backend
+- WhatsApp booking
 - RTL Arabic layout
