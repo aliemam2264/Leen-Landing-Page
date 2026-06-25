@@ -8,7 +8,7 @@ type LogoProps = {
 
 export function Logo({ className, showArabic = true }: LogoProps) {
   return (
-    <div className={cn("flex items-center gap-1", className)}>
+    <div className={cn("flex items-center gap-3", className)}>
       <Image src={"/images/logo.png"} alt="leen logo" width={100} height={50}/>
       {showArabic && (
         <div className="leading-tight">

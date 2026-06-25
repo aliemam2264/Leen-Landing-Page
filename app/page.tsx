@@ -25,7 +25,7 @@ export default function Home() {
             <div className="container grid items-center gap-10 lg:grid-cols-[1.05fr_.95fr]">
               <div className="relative z-10">
                 <Badge className="mb-5 bg-white/80 text-wine">جلدية · تجميل · ليزر · عناية بالبشرة</Badge>
-                <h1 className="max-w-4xl text-4xl font-black leading-[1.15] text-wineDark md:text-6xl lg:text-7xl">
+                <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.35] text-wineDark md:text-5xl lg:text-6xl">
                   جمال طبيعي، تفاصيل أهدى، وحجز أسرع مع <span className="text-orange">لين</span>
                 </h1>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { PriceTag } from "./PriceTag";
 
 export function ServiceExplorer() {
   const [active, setActive] = useState(serviceCategories[0].id);
@@ -52,7 +53,7 @@ export function ServiceExplorer() {
                   <div className="grid h-14 w-14 place-items-center rounded-2xl bg-peach text-orange shadow-sm transition-all group-hover:scale-105">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <Badge className="bg-white">{service.price}</Badge>
+                  <PriceTag price={service.price}/>
                 </div>
                 <CardTitle className="text-2xl text-wineDark">{service.title}</CardTitle>
                 <p className="pt-2 text-sm leading-7 text-muted-foreground">{service.short}</p>
